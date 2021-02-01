@@ -1,7 +1,7 @@
 exports.install = function() {
     F.route('/*', view_unlogged, ['unauthorize']);
     F.route('/', view_index, ['authorize']);
-    F.route('/about', view_about, ['authorize']);
+    F.route('/blog', view_blog, ['authorize']);
     F.route('/admin_page', view_admin_page, ['authorize', '@admin']);
     F.route('/super_user_page', view_super_user_page, ['authorize', '@admin', '@super_user']);
 
@@ -33,8 +33,8 @@ function error_pages(msg) {
     };
 };
 
-function view_about() {
-    this.view('about');
+function view_blog() {
+    this.view('blog');
 }
 
 function view_admin_page() {

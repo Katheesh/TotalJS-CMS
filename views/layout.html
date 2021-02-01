@@ -35,10 +35,10 @@
             <span class="nav-link-text">@(Dashboard)</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="About">
-          <a class="nav-link" href="/about">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Blog">
+          <a class="nav-link" href="/blog">
             <i class="fa fa-fw fa-info-circle"></i>
-            <span class="nav-link-text">@(About)</span>
+            <span class="nav-link-text">@(Blog)</span>
           </a>
         </li>
         @{if helpers.isAuthorised(user, [1,2])}
@@ -82,7 +82,7 @@
               </a>
               <div class="dropdown-menu">
               	<a class="dropdown-item"  href="?language=en">@(English)</a>
-				<a class="dropdown-item"  href="?language=lv">@(Latvian)</a>
+				        <a class="dropdown-item"  href="?language=lv">@(Latvian)</a>
               </div>
             </li>
         <li class="nav-item">
