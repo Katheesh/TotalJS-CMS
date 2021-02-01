@@ -4,7 +4,8 @@
   "description": "Total.js framework login example with users from mysql and different user privilages",
   "main": "debug.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node debug.js"
   },
   "repository": {
     "type": "git",

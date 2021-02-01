@@ -4,9 +4,9 @@
 // https://www.totaljs.com
 // ===================================================
 
-var options = { port: 8000, ip: process.env.IP };
+var options = { port: 8050, ip: process.env.IP };
 
-// options.ip = '127.0.0.1';
+options.ip = '127.0.0.1';
 // options.port = parseInt(process.argv[2]);
 // options.config = { name: 'Total.js' };
 // options.sleep = 3000;
