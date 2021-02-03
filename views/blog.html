@@ -2,6 +2,57 @@
 
 <div class="container">
 
-	<h2>@(Blog)</h2>
+	<h2>@(New Blog)</h2>
+
+    <style type="text/css">
+        .input-tags {
+          width: 100%;
+          padding: 15px;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .label-info {
+          background-color: #5bc0de;
+          padding: 3px;
+        }
+    </style>
+	<div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label>*@(Title)</label>
+                <input type="text" name="title" class="form-control" placeholder="@(Title)" required />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>*@(Main Image) </label>
+                <input type="file" name="image" class="form-control" placeholder="@(image file)" required />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>*@(Publish Date) </label>
+                <input type="date" name="date" class="form-control" placeholder="@(Publish Date)" required />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label>*@(body)</label>
+                <textarea id="editor" name="body" class="form-control" placeholder="@(body...)" required ></textarea> 
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label>@(Keywords)</label>
+                <input class="input-tags" type="text" data-role="tagsinput">
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
 <!-- /container -->

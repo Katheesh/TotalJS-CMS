@@ -54,7 +54,7 @@ body.fixed-nav {
 
 #mainNav .navbar-collapse {
   overflow: auto;
-  max-height: 75vh; }
+  max-height: 40vh; }
   #mainNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     cursor: pointer; }
   #mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
