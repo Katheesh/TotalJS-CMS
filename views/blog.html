@@ -4,6 +4,19 @@
 
 	<h2>@(New Blog)</h2>
 
+    <style type="text/css">
+        .input-tags {
+          width: 100%;
+          padding: 15px;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .label-info {
+          background-color: #5bc0de;
+          padding: 3px;
+        }
+    </style>
 	<div class="row">
         <div class="col-md-12">
             <div class="form-group">
@@ -28,7 +41,13 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label>*@(body)</label>
-                <textarea name="body" class="form-control" placeholder="@(body...)" required ></textarea> 
+                <textarea id="editor" name="body" class="form-control" placeholder="@(body...)" required ></textarea> 
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label>@(Keywords)</label>
+                <input class="input-tags" type="text" data-role="tagsinput">
             </div>
         </div>
     </div>
